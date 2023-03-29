@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Add Post</title>
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="ULounge.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="ULounge.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <!-- Create the page title and links to pages. Consistent for all pages -->
+        <h1 class="title">ULounge</h1>
+        <a href="index.html" class="link">Home Page</a>
+        <a href="PublicActivity.html" class="link">View Public Posts</a>
+        <a href="AddPost.html" class="link">Add Post</a>
+        <a href="About.html" class="link">About/Terms of Service</a>
+    </header>
+
+    <main>
+        <br>
+        <br>
+         <!-- Create the page header for the Add Post page -->
+        <h2 class="pageHeader">Add a Post</h2>
+
+        <!-- Form to organize the info the user will include in a post -->
+        <div id="addPostForm">
+            <form>
+                <label for="nameBox">Name: </label>
+                <input type="text" id="nameBox" name="nameBox" required>
+                <br>
+                <br>
+                <label for="dateBox">Date: </label>
+                <input type="text" id="datePicker" name="dateBox" placeholder="Click for current date" required>
+                <br>
+
+                <p>Check all that apply, if any:</p>
+
+                <input type="checkbox" id="checkBox1" name="checkBox1">
+                <label for="checkBox1">Academic Related Post</label>
+                <br>
+                <br>
+                <input type="checkbox" id="checkBox2" name="checkBox2">
+                <label for="checkBox2">Campus Event Related Post</label>
+                <br>
+                <br>
+                <input type="checkbox" id="checkBox3" name="checkBox3">
+                <label for="checkBox3">Personal/Unrelated to UNCC</label>
+                <br>
+                <br>
+                <label for="postContent"><strong>Enter your post content below:</strong></label>
+                <br>
+                <br>
+                <textarea id="postContent" name="postContent" rows="5" cols="60"></textarea>
+                <br>
+                <input type="submit" id="submitPost" name="submitPost" class="submitButton">
+            </form>
+        </div>
+
+        <br>
+        <br>
+        <img src="unccLogo.png" alt="uncc Logo" id="unccLogo">
+
+    </main>
+
+    <footer>
+        <br>
+        <br>
+        <a href="https://validator.w3.org/">Validate HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/">Validate CSS</a>
+    </footer>
+</body>
+</html>
